@@ -7,7 +7,7 @@ class ahb_sb;
 	event DONE;
 
 	function new(mailbox#(ahb_txn)rm2sb;
-			mailbox#(ahb_txn)mon2sb);
+		     mailbox#(ahb_txn)mon2sb, int no_of_testcases);
 	
 		txn2rm=new();
 		txn2sb=new();
