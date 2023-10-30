@@ -13,7 +13,7 @@ class ahb_ipmon;
 	endfunction
 	
 	task monitor();
-		@(if.drv2mon);
+		@(if.drv2mon_cb);
 			txn.addr=if.addr;
 			txn.hsel=if.hsel;
 			txn.write=if.write;
