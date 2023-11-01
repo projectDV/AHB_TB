@@ -17,5 +17,7 @@ class ahb_test;
 		begin
 			env.build();
 			env.run();
+			$finish();
+		end
 	endtask
 endclass
