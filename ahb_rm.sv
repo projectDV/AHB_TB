@@ -34,7 +34,7 @@ class ahb_rm;
 				mon2rm.get(txn);
 				rd_wr();
 				txn2sb=new txn;
-				rm2sb.put(txn);
+				rm2sb.put(txn2sb);
 				end
 		join_none
 	endtask
